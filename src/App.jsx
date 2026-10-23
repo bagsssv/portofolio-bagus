@@ -1,8 +1,7 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
-// import About from './components/About';
+import About from './components/About';
 // import Project from './components/Project';
 // import Contact from './components/Contact';
 
@@ -14,7 +13,7 @@ export default function App() {
         <main className="pt-20"> 
           <Routes>
             <Route path="/" element={<Hero />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
             {/* <Route path="/projects" element={<Project />} /> */}
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>

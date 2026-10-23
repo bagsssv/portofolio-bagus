@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, User, Briefcase, Mail } from 'lucide-react';
+import { FaHome, FaUser, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 
 export default function Navbar() {
   return (
@@ -12,16 +11,16 @@ export default function Navbar() {
         
         <div className="flex gap-4 md:gap-8">
           <Link to="/" className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
-            <Home size={18} /> <span className="hidden sm:inline">Home</span>
+            <FaHome size={18} /> <span className="hidden sm:inline">Home</span>
           </Link>
           <Link to="/about" className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
-            <User size={18} /> <span className="hidden sm:inline">About</span>
+            <FaUser size={18} /> <span className="hidden sm:inline">About</span>
           </Link>
           <Link to="/projects" className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
-            <Briefcase size={18} /> <span className="hidden sm:inline">Projects</span>
+            <FaBriefcase size={18} /> <span className="hidden sm:inline">Projects</span>
           </Link>
           <Link to="/contact" className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
-            <Mail size={18} /> <span className="hidden sm:inline">Contact</span>
+            <FaEnvelope size={18} /> <span className="hidden sm:inline">Contact</span>
           </Link>
         </div>
       </div>

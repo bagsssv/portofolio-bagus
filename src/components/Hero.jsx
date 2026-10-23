@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import profil from '../assets/profil.jpeg';
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="mx-auto w-40 h-40 rounded-full overflow-hidden border-4 border-indigo-600 shadow-xl">
           {/* Ganti src ini pakai foto lu nanti */}
           <img 
-            src="https://via.placeholder.com/150" 
+            src={profil} 
             alt="M Bagus Shokhibul Khikam" 
             className="w-full h-full object-cover"
           />
@@ -32,13 +32,13 @@ export default function Hero() {
         {/* Tombol Sosial Media */}
         <div className="flex justify-center gap-6 pt-4">
           <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
-            <Github size={18} />
+            <FaGithub size={24} />
           </a>
           <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
-            <Linkedin size={18} />
+            <FaLinkedin size={24} />
           </a>
           <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
-            <Mail size={18} />
+            <FaEnvelope size={24} />
           </a>
         </div>
         

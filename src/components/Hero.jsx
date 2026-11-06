@@ -7,12 +7,12 @@ export default function Hero() {
       <div className="max-w-3xl text-center space-y-8">
         
         {/* Foto Profil */}
-        <div className="mx-auto w-40 h-40 rounded-full overflow-hidden border-4 border-indigo-600 shadow-xl">
+        <div className="mx-auto w-50 h-50 rounded-full overflow-hidden border-4 border-indigo-600 shadow-xl">
           {/* Ganti src ini pakai foto lu nanti */}
           <img 
             src={profil} 
             alt="M Bagus Shokhibul Khikam" 
-            className="w-full h-full object-cover"
+            className="w-full h-60 object-cover"
           />
         </div>
 
@@ -31,13 +31,13 @@ export default function Hero() {
 
         {/* Tombol Sosial Media */}
         <div className="flex justify-center gap-6 pt-4">
-          <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
+          <a href="https://github.com/bagsssv" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
             <FaGithub size={24} />
           </a>
-          <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
+          <a href="https://www.linkedin.com/in/pkk-m-b89a15386" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
             <FaLinkedin size={24} />
           </a>
-          <a href="#" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
+          <a href="mailto:pkkmbh1@gmail.com" className="p-3 bg-white text-gray-700 hover:text-indigo-600 rounded-full shadow-md hover:shadow-lg transition-all">
             <FaEnvelope size={24} />
           </a>
         </div>

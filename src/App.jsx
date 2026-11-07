@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-// import Project from './components/Project';
-// import Contact from './components/Contact';
+import Project from './components/Projects';
+import Contact from './components/Contacts';
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/projects" element={<Project />} /> */}
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         
